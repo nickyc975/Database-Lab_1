@@ -5,7 +5,7 @@ use COMPANY;
 set @@foreign_key_checks=OFF;
 
 create table DEPARTMENT(
-    DNAME varchar(10),
+    DNAME varchar(50),
     DNO varchar(11),
     MGRSSN varchar(11),
     MGRSTARTDATE date,
@@ -14,7 +14,7 @@ create table DEPARTMENT(
 );
 
 create table EMPLOYEE(
-    ENAME varchar(10),
+    ENAME varchar(50),
     ESSN char(11),
     ADDRESS varchar(50),
     SALARY float,
@@ -26,7 +26,7 @@ create table EMPLOYEE(
 );
 
 create table PROJECT(
-    PNAME varchar(10),
+    PNAME varchar(50),
     PNO varchar(11),
     PLOCATION varchar(50),
     DNO varchar(11),
